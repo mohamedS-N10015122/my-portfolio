@@ -9,8 +9,37 @@
 <body>
     <script src="script.js" defer></script>
     <h1>My portfolio</h1>
+    <button onclick="toggle()" class="toggle-btn">Light mode</button>
     <p>Hi, I'm Mohamed</p>
-    <a href="projects.html">My Projects</a>  <a href="about.html">About Me</a> <a href="contact.html">Contact Me</a>
+    <a href="#projects">My Projects</a>
+    <a href="#about-me">About Me</a>
+    <a href="#contact">Contact Me</a>
+    <details>
+        <summary>Projects</summary>
+        <div id="projects">
+            placeholder
+        </div>
+    </details>
+    <details>
+        <summary>About Me</summary>
+        <div id="about-me">
+            I liked coding enough to learn it. <br>
+            I'm learning HTML, CSS and Javascript. <br>
+            I did learn Javascript in high school.
+        </div>
+    </details>
+    <details>
+        <summary>Contact</summary>
+        <div id="contact">
+            <form id="form event">
+            <label for="form">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Type Here"><br>
+            <label for="form">Message:</label>
+            <input type="text" id="message"name="message" placeholder="Type Here">
+            <button type="submit">Submit</button>
+         </div>
+    </form>
+    </details>
     <footer>© Mohamed Salad 2026</footer>
 </body>
 </html>
