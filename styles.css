@@ -4,7 +4,23 @@ body {
   display: flex;
   flex-direction: column;
 background-color: rgb(33, 30, 30);
+animation-name: light-to-dark;
+animation-duration: 0.5s;
 color:white
+}
+@keyframes dark-to-light {
+  from {
+    background-color: rgb(33, 30, 30);
+  } to {
+    background-color: #e4e4e4;
+  }
+}
+@keyframes light-to-dark {
+  from{
+    background-color: #e4e4e4;
+  } to {
+    background-color: rgb(33, 30, 30);
+  }
 }
 h1{
   margin-left: auto;
@@ -16,6 +32,8 @@ color: gray;
 .light-mode {
   background-color: #e4e4e4;
   color: black;
+  animation-name: dark-to-light;
+  animation-duration: 0.5s;
 
 }
 .toggle-btn {
