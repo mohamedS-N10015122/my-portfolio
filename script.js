@@ -15,8 +15,15 @@ function toggle() {
     let button = document.getElementsByClassName("toggle-btn")
     if (button[0].textContent === "Light mode"){
         button[0].textContent = "Dark mode"
-    } else button[0].textContent = "Light mode"
+          localStorage.setItem("dark mode", false) // used that if you refresh after changing contrast it doesn't change
+    } else {
+        button[0].textContent = "Light mode"
+          localStorage.setItem("dark mode", true)
+    }
   var element = document.body;
   element.classList.toggle("light-mode");
 
+}
+if (localStorage.getItem('dark mode') === "false") {
+    toggle()
 }
